@@ -63,13 +63,4 @@ pip install pandas matplotlib numpy
 3. Run the Analysis
 Navigate to the /notebooks directory and open the .ipynb files using Jupyter Lab or VS Code.
 
-#### 1. Clone the repository:
-git clone https://github.com/montahabouezzed-sys/RF-Signal-Processing-Antenna-Analysis.git
 
-cd RF-Signal-Processing-Antenna-Analysis
-
-#### 2. Install Dependencies:
-pip install pandas matplotlib numpy
-
-#### 3. Run the Analysis:
-Open the .ipynb files in the /notebooks directory using Jupyter Lab or VS Code to view the step-by-step processing from raw Hz data to the final GHz plots.
