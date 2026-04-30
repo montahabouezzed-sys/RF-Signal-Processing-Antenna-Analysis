@@ -1,38 +1,36 @@
 🛰️ Radar Antenna Analysis & RF Signal Processing
 
-Core Skillset: Python | Pandas | Matplotlib | Data Engineering | RF Theory
+Core Skillset:
+**Python** | **Pandas** | **Matplotlib** | **Data Engineering** | **RF Theory**
 📌 Project Overview
 
 This repository serves as a bridge between my experience in automotive sensor data and my experience in RF - electromagnetics. It demonstrates the ability to handle domain-specific data formats (like S-parameters and gain plots) and transform raw measurements into industry-standard visualizations.
 
-🛠️ Key Technical Features
+### 🛠️ Key Technical Features
 
-  1. Data Ingestion & Cleaning:
+1. **Data Ingestion & Cleaning:**
+   * **Parsing** complex CSV files with nested metadata (Author/Equipment headers).
+   * **Automated unit conversion** ($Hz \rightarrow GHz$) and rounding for high-precision radar datasets.
 
-  Parsing complex CSV files with nested metadata (Author/Equipment headers).
+2. **Engineering Visualization:**
+   * **Return Loss Analysis:** Plotting $S_{11}$ resonance with inverted Y-axes to highlight impedance matching at **77 GHz**.
+   * **Radiation Patterns:** Comparative Polar plots for **E-plane** ($\phi = 0^{\circ}$) and **H-plane** ($\phi = 90^{\circ}$) analysis.
 
-  Automated unit conversion (Hz → GHz) and rounding for high-precision radar datasets.
+3. **Automated Insights:**
+   * **Programmatic identification** of resonance frequencies using `idxmin()` logic.
+   * **Dynamic annotation** of "Dips" and "-10dB Thresholds" for bandwidth verification.
 
-  2. Engineering Visualization:
+### 📊 Sample Results
 
-  Return Loss Analysis: Plotting S11​ resonance with inverted Y-axes to highlight impedance matching at 77 GHz.
+#### 1. Return Loss (RL)
+![S11 Analysis](./exports/plot_RL_radarBands.png)
+*This plot identifies a sharp resonance at 76.8 GHz, indicating optimal antenna tuning for automotive radar applications.*
 
-  Radiation Patterns: Comparative Polar plots for E-plane (ϕ=0∘) and H-plane (ϕ=90∘) analysis.
+#### 2. 2D Polar Radiation Pattern
+![Radiation Patterns](./exports/2D_realGain_77GHz.png)
+*Comparative analysis of the antenna's beamwidth and side-lobe levels across two principal planes.*
 
-  3. Automated Insights:
-
-  Programmatic identification of resonance frequencies using idxmin() logic.
-
-  Dynamic annotation of "Dips" and "-10dB Thresholds" for bandwidth verification.
-
-📊 Sample Results
-1. Return Loss RL
-This plot identifies a sharp resonance at 76.8 GHz, indicating optimal antenna tuning for automotive radar applications.
-
-2. 2D Polar Radiation Pattern
-Comparative analysis of the antenna's beamwidth and side-lobe levels across two principal planes.
-
-📈 Current Learning Roadmap (To-Be Acquired)
+#### 📈 Current Learning Roadmap (To-Be Acquired)
 
   [ ] Signal Smoothing: Implementing Savitzky-Golay filters via scipy.signal to handle noisy real-world VNA sweeps.
 
