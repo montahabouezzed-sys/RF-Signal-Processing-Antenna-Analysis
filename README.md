@@ -42,18 +42,34 @@ This repository serves as a bridge between my experience in automotive sensor da
 
   /data: Raw CSV/S1P files (cleaned of sensitive metadata).
 
-  /notebooks: Jupyter notebooks detailing the step-by-step transformation from Hz to GHz.
+  /notebooks: Jupyter notebooks
 
-  /outputs: High-resolution, transparent PNGs for technical reports.
+  /exports: High-resolution, transparent PNGs for technical reports.
 
-Replication
-1. Clone the repository:
+#### 🚀 Replication
+Follow these steps to set up the environment and run the analysis locally:
+
+1. Clone the repository
+Bash
+
+git clone https://github.com/montahabouezzed-sys/RF-Signal-Processing-Antenna-Analysis.git
+cd RF-Signal-Processing-Antenna-Analysis
+
+2. Install dependencies
+Bash
+
+pip install pandas matplotlib numpy
+
+3. Run the Analysis
+Navigate to the /notebooks directory and open the .ipynb files using Jupyter Lab or VS Code.
+
+#### 1. Clone the repository:
 git clone https://github.com/montahabouezzed-sys/RF-Signal-Processing-Antenna-Analysis.git
 
 cd RF-Signal-Processing-Antenna-Analysis
 
-2. Install Dependencies:
+#### 2. Install Dependencies:
 pip install pandas matplotlib numpy
 
-3. Run the Analysis:
+#### 3. Run the Analysis:
 Open the .ipynb files in the /notebooks directory using Jupyter Lab or VS Code to view the step-by-step processing from raw Hz data to the final GHz plots.
