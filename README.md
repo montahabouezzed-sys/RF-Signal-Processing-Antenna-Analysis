@@ -1,2 +1,60 @@
-# RF-Signal-Processing-Antenna-Analysis
-Data generated/exported from electromagetic simulations and RF measurements of single antennas as well as antenna arrays. The processing pipeline converts raw Touchstone (.sn) exports into actionable engineering metrics.
+🛰️ Radar Antenna Analysis & RF Signal Processing
+
+Core Skillset: Python | Pandas | Matplotlib | Data Engineering | RF Theory
+📌 Project Overview
+
+This repository serves as a bridge between my experience in automotive sensor data and my experience in RF - electromagnetics. It demonstrates the ability to handle domain-specific data formats (like S-parameters and gain plots) and transform raw measurements into industry-standard visualizations.
+
+🛠️ Key Technical Features
+
+  1. Data Ingestion & Cleaning:
+
+  Parsing complex CSV files with nested metadata (Author/Equipment headers).
+
+  Automated unit conversion (Hz → GHz) and rounding for high-precision radar datasets.
+
+  2. Engineering Visualization:
+
+  Return Loss Analysis: Plotting S11​ resonance with inverted Y-axes to highlight impedance matching at 77 GHz.
+
+  Radiation Patterns: Comparative Polar plots for E-plane (ϕ=0∘) and H-plane (ϕ=90∘) analysis.
+
+  3. Automated Insights:
+
+  Programmatic identification of resonance frequencies using idxmin() logic.
+
+  Dynamic annotation of "Dips" and "-10dB Thresholds" for bandwidth verification.
+
+📊 Sample Results
+1. Return Loss RL
+This plot identifies a sharp resonance at 76.8 GHz, indicating optimal antenna tuning for automotive radar applications.
+
+2. 2D Polar Radiation Pattern
+Comparative analysis of the antenna's beamwidth and side-lobe levels across two principal planes.
+
+📈 Current Learning Roadmap (To-Be Acquired)
+
+  [ ] Signal Smoothing: Implementing Savitzky-Golay filters via scipy.signal to handle noisy real-world VNA sweeps.
+
+  [ ] Automated Bandwidth Calculation: Scripting the "Search for -10dB intercept" to calculate fractional bandwidth automatically.
+
+  [ ] Interactive Dashboards: Converting static plots to Plotly for interactive frequency exploration.
+
+📂 Repository Structure
+
+  /data: Raw CSV/S1P files (cleaned of sensitive metadata).
+
+  /notebooks: Jupyter notebooks detailing the step-by-step transformation from Hz to GHz.
+
+  /outputs: High-resolution, transparent PNGs for technical reports.
+
+Replication
+1. Clone the repository:
+git clone https://github.com/YourUsername/RF-Signal-Processing-Antenna-Analysis.git
+cd RF-Signal-Processing-Antenna-Analysis
+
+2. Install Dependencies:
+pip install pandas matplotlib numpy
+
+3. Run the Analysis:
+Open the .ipynb files in the /notebooks directory using Jupyter Lab or VS Code to view the step-by-step processing from raw Hz data to the final GHz plots.
